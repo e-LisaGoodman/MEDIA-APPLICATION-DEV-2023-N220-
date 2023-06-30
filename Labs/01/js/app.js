@@ -63,7 +63,4 @@ function setup() {
     ellipse(400,350,15)
     ellipse(400,315,15)
 
-
-
-
 }
