@@ -1,32 +1,44 @@
 function setup() {
     createCanvas(800,600)
     var writingSpace = (255,255,255)
+    
     background(0,0,0)
+    
+   // Circles
     stroke(255,255,255)
     strokeWeight(5)
+    // large circles
     fill(177,255,204)
     ellipse(250,250,350)
     ellipse(550,250,350)
     ellipse(250,350,350)
     ellipse(550,350,350)
+    // medium circles
     fill(77,255,136)
     ellipse(200,200,300)
     ellipse(600,200,300)
     ellipse(200,400,300)
     ellipse(600,400,300)
+    // small circles
     fill(0,150,50)
     ellipse(150,150,250)
     ellipse(650,150,250)
     ellipse(150,450,250)
     ellipse(650,450,250)
+    
+    //lines
     stroke(0,102,0)
     strokeWeight(3)
     line(150,175,650,425)
     line(150,425,650,175)
+    
+    //rectangles
     fill(writingSpace)
     rect(150,125,500,50)
     rect(150,425,500,50)
     fill(writingSpace)
+    
+    //grains of sand and action lines
     stroke(0,0,0)
     strokeWeight(1)
     ellipse(400,290,15)
