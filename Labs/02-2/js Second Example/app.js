@@ -1,4 +1,6 @@
 //Puck Side- Red v. Blue 
+//The screen is divided in half with right side red and left side blue. 
+//Draw a circle to follow the mouse and show which side it is on by filling red or blue.
 
 //Canvas size: 400x300
 function setup(){

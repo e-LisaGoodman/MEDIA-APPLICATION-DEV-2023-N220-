@@ -7,10 +7,10 @@ let size=1;
 function setup(){
     createCanvas(400,300)
     circle(200,150,size)
-    background (0)
 }
 
 function draw(){
+    background (0)
     circle(200,150,size)
     //Once the circle gets a diameter of 200, set its diameter back to 1.
     if(size>200){
