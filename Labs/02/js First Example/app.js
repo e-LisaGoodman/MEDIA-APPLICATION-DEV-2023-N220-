@@ -7,5 +7,4 @@ function setup(){
 function draw(){
     xPos++;
     circle(xPos,200,30)
-
 }
