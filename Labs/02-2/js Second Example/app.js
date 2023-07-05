@@ -12,11 +12,23 @@ function setup(){
 function draw(){
     background(0)
     //Create an application that draws a circle where the mouse is at.
-    circle(mouseX,mouseY,30)
+    circle(mouseX,mouseY,50)
     //When the mouse is on the left side of the canvas, draw the circle in blue.
-    if(mouseX<200){
-        fill(0,0,153)
+    if((mouseX<=200) && (mouseX<100)){
+        fill(0,0,255)
+    }
+    //Gradient Affect Blue
+    if((mouseX<=200) && (mouseX>100)){
+        fill(50,50,150)
     }
     //When the mouse is on the right half of the canvas, draw the circle in red. 
-    else fill(153,0,0)
+    if((mouseX>200) && (mouseX>300)){
+        fill(255,0,0)
+    }
+    //Gradient Affect Red
+    if((mouseX>200) && (mouseX<300)){
+        fill(150,50,50)
+    }
+    
+    //else fill(153,0,0)
 }
