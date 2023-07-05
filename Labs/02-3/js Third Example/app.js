@@ -16,6 +16,10 @@ function draw(){
     xPos += 5;
     fill(111,111,22)
     arc(xPos,300,200,200,QUARTER_PI,320)
+    //for fun- Eating motion upon mouse click
+    if(mouseIsPressed == true){
+        arc(xPos,300,200,200,radians(5),radians(355))
+    }
     //Write the code so that when the circle reaches 800 pixels to the right, 
     if(xPos > 799){
         //move the circle to the far left of the screen.
