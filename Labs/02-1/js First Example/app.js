@@ -4,7 +4,7 @@
 //Start with a diameter of 1. 
 let size=1;
 
-//create a space and initiate circle
+//Create a space and initiate circle
 function setup(){
     createCanvas(400,300)
     circle(200,150,size)
