@@ -5,11 +5,11 @@
 let xPos = -100; 
 
 //Create a canvas 800px x 600 px.
-
 function setup(){
     createCanvas(800,600)
 }
 
+//Begin drawing sequence
 function draw(){
     background(0)
     //- make it move to the right 5 pixels per frame.

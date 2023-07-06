@@ -1,9 +1,10 @@
+//draw something recognizable
+//create a space and global variable
 function setup() {
     createCanvas(800,600)
-    var writingSpace = (255,255,255)
-    
     background(0,0,0)
-    
+    var writingSpace = (255,255,255)
+        
    // Circles
     stroke(255,255,255)
     strokeWeight(5)

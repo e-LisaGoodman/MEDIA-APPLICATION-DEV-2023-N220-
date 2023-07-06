@@ -8,7 +8,7 @@ function setup(){
     noStroke()
 }
 
-//Basic assigmnent
+//Drawing block with assigmnent details
 function draw(){
     background(0)
     //Create an application that draws a circle where the mouse is at.
