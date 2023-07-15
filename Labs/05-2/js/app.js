@@ -2,6 +2,7 @@
 
 //Write a loop that puts 100 square divs (20px x 20px) on the page. 10 times in HTML, can I make 10 rows?
 for (i=0; i < 100; i++){
+    //make a new element for the div in order to assign styles
     let newDiv = document.createElement("div")
     //newDiv.style.height = "20px";
     //newDiv.style.width = "20px";
@@ -13,4 +14,3 @@ for (i=0; i < 100; i++){
 
 //Set their float CSS attribute to left (in HTML).
 
-//Give each a different background color. 
