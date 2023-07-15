@@ -7,7 +7,7 @@ dvBruise.style.height = "100px";
 
 //change the div's color to black when the mouse is over the div (and in HTML)
 function blackOver(){
-    dvBruise.style.backgroundColor = "#0d0d0d"
+    dvBruise.style.backgroundColor = "#0d0d0d";
 }
 
 //that returns to blue when mouse away
