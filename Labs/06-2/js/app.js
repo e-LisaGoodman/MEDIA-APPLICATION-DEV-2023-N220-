@@ -17,12 +17,12 @@ let movies = [
 for(let i = 0; i<movies.length; i++) {
     //create element for div content
     let newEl = document.createElement("div");
-    newEl.innerHTML = movies[i].title + ", IMDB Rating: " + movies[i].IMDB;
+    newEl.innerHTML = movies[i].title + " - IMDB Rating: " + movies[i].IMDB;
     //Conditional Style Change 
-    if (movies[i].IMDB>=8){
+    if (movies[i].IMDB>7){
         newEl.style.backgroundColor= "#00b300"
     }
-    else newEl.style.backgroundColor= "#ff6666"
+    else newEl.style.backgroundColor= "#ff9999"
     newEl.classList.add("movie");
     movieDiv.appendChild(newEl);
 }
