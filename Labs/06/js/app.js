@@ -1,10 +1,12 @@
 //Data-Driven Display
 let obj = {
-width: 50,
-height: 50,
-color: "#00FF00",
-x: 400,
-y: 300, 
+width: 750,
+height: 500,
+color: "#ffe0b3",
+strokeWeight: 20,
+stroke: "#9933ff",
+x: 25,
+y: 50, 
 }
 
 
@@ -15,7 +17,10 @@ function setup(){
 }
 
 function draw(){
-  rect(obj.x, obj.y, obj.width, obj.height)
+  rect(obj.x, obj.y, obj.width, obj.height);
+  fill(obj.color);
+  strokeWeight(obj.strokeWeight);
+  stroke(obj.stroke);
 }
 
 //In your create or draw function
