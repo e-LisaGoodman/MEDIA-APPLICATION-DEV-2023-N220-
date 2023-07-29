@@ -28,7 +28,6 @@ function calc(){
 
     }
     else result = flop()
-    num.value = "";
 }
 //FAILED PASS parts
     //function setup(){
