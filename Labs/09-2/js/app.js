@@ -21,6 +21,8 @@ function calcAvg(){
         //Converts the string version of the numbers into number versions
         sum += Number(myArray[i]);
         console.log (sum);
+        sum.innerHTML = "Total = " + sum;
+        //sum.innerHTML= `Total = ${sum}`;
         //let elSum = document.createElement("sum");
         //elSum.innerHTML = `Total ${sum}`;
         //sum.appendChild(elSum);
@@ -29,15 +31,18 @@ function calcAvg(){
     //Calculates the average of the array
     avg = sum/myArray.length;
     console.log (avg);
+    avg.innerHTML = "Average = " + avg;
+    //avg.innerHTML= `Average = ${avg}`;
     //let elAvg = document.createElement("avg");
     //elAvg.innerHTML = `Average ${avg}`;
     //return `Average ${avg}`;
     //Removes the text from the input so the user can type in new numbers
     numList.value = "";
 }
+
 //Displays to the user
 //The average
 //The sum
-//avg.innerHTML = "Average = " + "${avg}";
-//sum.innerHTML = "Total = " + "${sum}";
+
+
 
