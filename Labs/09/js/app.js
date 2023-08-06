@@ -4,6 +4,7 @@
 //Write a loop that creates three divs based on the data in the array. 
 //You should only have one document.createElement in your code.
 
+let div = document.getElementById("div")
 
 let objects = [
  { color: "#FF0000", height: 100, width: 300 },
@@ -17,8 +18,8 @@ for (let i=0; i < objects.length; i++){
 
     newDiv.classList.add("divStyle")
     //Give each div the pre-set style from objects array 
-    newDiv.style.backgroundColor = "objects.color[i]";
-    newDiv.style.height = "objects.height[i]" + "px";
-    newDiv.style.width = "objects.width[i]" + "px";
+    newDiv.style.backgroundColor = "(objects.color[i])";
+    newDiv.style.height = "(objects.height[i])" + "px";
+    newDiv.style.width = "(objects.width[i])" + "px";
     document.body.appendChild(newDiv)
 }

@@ -5,7 +5,7 @@
 let blinker = document.getElementById("blinker")
 let colors = ["#ff0000", "#ffff66", "#009933", "6666ff"];
 //document.body.appendChild(blinker);
-var i = 0
+let i = 0
 
 //initiate square style
 blinker.style.backgroundColor = "#e0e0e0";

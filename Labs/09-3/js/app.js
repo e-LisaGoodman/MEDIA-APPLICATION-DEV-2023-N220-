@@ -22,17 +22,18 @@ function findBad(){
     console.log(myArray);
     //Loops through  the array looking for bad words in the array
     for (let i = 0; i < testWords.length; i++){
-        if(myArray[i] == "clear"){
+        if(String(myArray[i]).toLowerCase() == "clear"){
+        //if(myArray[i] == lookingFor.toLowerCase){
             //console.log("Word Found")
             //Adds 1 to a tally count when a bad word is found
             tally ++;
         }
-        else if (myArray[i] == "water"){
+        else if (String(myArray[i]).toLowerCase() == "water"){
             //console.log("Word Found")
             //Adds 1 to a tally count when a bad word is found
             tally ++;
         }
-        else if (myArray[i] == "tires"){
+        else if (String(myArray[i]).toLowerCase() == "tires"){
             //console.log("Word Found")
             //Adds 1 to a tally count when a bad word is found
             tally ++;
@@ -41,5 +42,4 @@ function findBad(){
         wordFound.innerHTML = `Tally of Words found ${tally}`
         words.value= "";
     }
-
 }

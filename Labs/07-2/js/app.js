@@ -18,13 +18,14 @@ function calc(){
     dvTip = Number(bill.value * 0.2);
     console.log(`Tip: $${dvTip}`)
     //print to div **NOT WORKING**
-    dvTip.innerHTML = `Tip: $${dvTip}`;
+    dvTip.innerHTML = "Tip: " + Number(dvTip);
     //Add tip to bill for total
     dvTotal = (Number(bill.value) + Number(dvTip));
     console.log(`Total: $${dvTotal}`);
-     //print to div **NOT WORKING**
-    dvTotal.innerHTML = `Total: $${dvTotal}`;
+    //print to div **NOT WORKING**
+    dvTotal.innerHTML = "Total with Tip: " + Number(dvTotal);
 }
+
 
 
 
