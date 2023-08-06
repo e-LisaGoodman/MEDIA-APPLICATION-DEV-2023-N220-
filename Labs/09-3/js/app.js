@@ -38,6 +38,7 @@ function findBad(){
             tally ++;
         }
         console.log(tally);
+        wordFound.innerHTML = `Tally of Words found ${tally}`
         words.value= "";
     }
 

@@ -3,23 +3,21 @@
 //when it’s clicked.
 
 let blinker = document.getElementById("blinker")
-let colors = ["#ff0000", "#FFFFb3", "#009933", "6666ff"];
-let x = 200;
-let y = 200;
-let diameter = 250;
+let colors = ["#ff0000", "#ffff66", "#009933", "6666ff"];
+//document.body.appendChild(blinker);
+var i = 0
 
-
-//Create an application  with an object that represent a virtual pet - similar to a Tamagotchi.
-blinker.style.backgroundColor = "#ff00ff";
-blinker.style.x = 200;
-blinker.style.y = 200;
+//initiate square style
+blinker.style.backgroundColor = "#e0e0e0";
+blinker.style.height = "100px";
+blinker.style.width = "100px";
 
 function change(){
    //style change
-   for(var i = 0; i<colors.length; i++){
-   circle(x,y,diameter);
-   blinker.style.backgroundColor = (colors[i]);
-   }
+    blinker.style.width = "150px";
+    blinker.style.height = "150px";
+    blinker.style.backgroundColor = (colors[i]);
+    i++;
 }
 
 //Create a space and initiate circle
