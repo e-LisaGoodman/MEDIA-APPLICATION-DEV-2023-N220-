@@ -15,13 +15,16 @@ let dvTotal = document.getElementById("total");
 //Calculate Tip
 function calc(){
     //20% tip calculation
-    dvTip = (bill.value * 0.2);
+    dvTip = Number(bill.value * 0.2);
     console.log(`Tip: $${dvTip}`)
+    //print to div **NOT WORKING**
+    dvTip.innerHTML = `Tip: $${dvTip}`;
     //Add tip to bill for total
     dvTotal = (Number(bill.value) + Number(dvTip));
     console.log(`Total: $${dvTotal}`);
-     //print to screen **NOT WORKING**
-    dvTip.innerHTML = `Tip: $${dvTip}`;
+     //print to div **NOT WORKING**
     dvTotal.innerHTML = `Total: $${dvTotal}`;
-   
 }
+
+
+
