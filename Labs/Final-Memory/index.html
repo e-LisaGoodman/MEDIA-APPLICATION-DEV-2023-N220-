@@ -4,8 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .faceDown {
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            font-size: 140px;
+            text-align: center;
+            justify-content: center;
+            background-color: #8f098f;
+            border: 3px solid #000000;
+            border-radius: 5px;
+            float: left;
+        }
+        .faceUp {
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            font-size: 20px;
+            text-align: center;
+            justify-content: center;
+            background-color: #57E76F;
+            border: 3px solid #FF9900;
+            border-radius: 5px;
+            float: left;
+        }
+    </style>
 </head>
 <body>
+    <div onclick="itsClicked(event)" data-response ="APPLE" class="faceDown">*</div>
+    <div onclick="itsClicked(event)" data-response = "ONION" class="faceDown">*</div>
+    <div onclick="itsClicked(event)" data-response = "BEAN"class="faceDown">*</div>
+    <div onclick="itsClicked(event)" data-response = "CORN" class="faceDown">*</div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div onclick="itsClicked(event)" data-response = "POTATO" class="faceDown">*</div>
+    <div onclick="itsClicked(event)" data-response = "CARROT" class="faceDown">*</div>
+    <div onclick="itsClicked(event)" data-response = "CHERRY" class="faceDown">*</div>
+    <div onclick="itsClicked(event)" data-response = "APPLE" class="faceDown">*</div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div onclick="itsClicked(event)" data-response = "ONION" class="faceDown">*</div>
+    <div onclick="itsClicked(event)" data-response = "CARROT" class="faceDown">*</div>
+    <div onclick="itsClicked(event)" data-response = "TOMATO" class="faceDown">*</div>
+    <div onclick="itsClicked(event)" data-response = "POTATO" class="faceDown">*</div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div onclick="itsClicked(event)" data-response = "TOMATO" class="faceDown">*</div>
+    <div onclick="itsClicked(event)" data-response = "CHERRY" class="faceDown">*</div>
+    <div onclick="itsClicked(event)" data-response = "CORN" class="faceDown">*</div>
+    <div onclick="itsClicked(event)" data-response = "BEAN" class="faceDown">*</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
     <script src="js/app.js"></script>
 </body>

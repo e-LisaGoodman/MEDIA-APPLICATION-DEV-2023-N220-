@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body {
+	        background: #333333;
+	        margin: 0;
+        }
+
+        .cards {
+	        margin: 48px auto;
+	        width: max-content;
+	        display: grid;
+	        grid-template-columns: repeat(4, 100px);
+	        gap: 16px;
+        }
+
+        .card {
+	        height: 100px;
+	        background: #111111;
+	        border: 3px solid #444444;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
