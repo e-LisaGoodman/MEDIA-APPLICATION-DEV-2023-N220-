@@ -1,5 +1,5 @@
 const cardsContainer = document.querySelector(".cards");
-const colors = ["#009933", "#ff99ff", "#ff3399", "#66ff99", "#ff9900", "#00ccff", "#9900cc", "ffff00"];
+const colors = ["#009933", "#0099ff", "#ff99ff", "#ff3399", "#66ff99", "#ff9900", "#00ccff", "#9900cc"];
 const colorsPicklist = [...colors, ...colors];
 const cardCount = colorsPicklist.length;
 
@@ -8,34 +8,32 @@ let revealedCount = 0;
 let activeCard = null;
 let awaitingEndOfMove = false;
 
-//flip two cards for one turn
+//Flip two cards for one turn
 function buildCard(color) {
 	const element = document.createElement("div");
-
+	//Set up face up style
 	element.classList.add("card");
 	element.setAttribute("data-color", color);
 	element.setAttribute("data-revealed", "false");
-
+	//Upon click
 	element.addEventListener("click", () => {
 		const revealed = element.getAttribute("data-revealed");
-
+		//Test if end of move
 		if (awaitingEndOfMove
 			|| revealed === "true"
-			|| element == activeCard)
-			{
+			|| element == activeCard) {
 			return;
 		}
 
-		// Reveal this color
+		// Reveal this color 
 		element.style.backgroundColor = color;
         
-
 		if (!activeCard) {
 			activeCard = element;
 
 			return;
 		}
-
+		//Test if the two cards match
 		const colorToMatch = activeCard.getAttribute("data-color");
 
 		if (colorToMatch === color) {
@@ -45,16 +43,16 @@ function buildCard(color) {
 			activeCard = null;
 			awaitingEndOfMove = false;
 			revealedCount += 2;
-
+			//End of game message upon all matches revealed
 			if (revealedCount === cardCount) {
 				alert("You win! Refresh to start again.");
 			}
 
 			return;
 		}
-
+		//When two cards have been clicked
 		awaitingEndOfMove = true;
-
+		//Turn cards back over after 2 seconds
 		setTimeout(() => {
 			activeCard.style.backgroundColor = null;
 			element.style.backgroundColor = null;
@@ -67,7 +65,7 @@ function buildCard(color) {
 	return element;
 }
 
-// Lay out cards
+// Create card sets
 for (let i = 0; i < cardCount; i++) {
 	const randomIndex = Math.floor(Math.random() * colorsPicklist.length);
 	const color = colorsPicklist[randomIndex];
